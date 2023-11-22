@@ -1,0 +1,55 @@
+<style>
+    body {
+      background-image: url('../static/images/background.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    </style>
+    
+    <html>
+    <form action="/pred" method="POST">
+
+    <h1>Prediction of Car Price </h1>
+    
+    <br>
+    <br>
+    Enter your User ID :
+    <br>
+    <br>
+    <input type="text" name="User ID"></input>
+    <br>
+    <br>
+
+    <label >Gender:</label>
+    <br>
+    
+    
+    
+    <select name="Gender">
+      <option value="1">Male</option>
+      <option value="0">Female</option>
+
+    
+    </select>
+    <br>
+    <br>
+    Enter your Age :
+    <br>
+    <br>
+    <input type="text" name="Age"></input>
+    <br>
+    <br>
+    Enter your Annual Salary :
+    <br>
+    <br>
+    <input type="text" name="Annual Salary"></input>
+    
+    <br>
+    <br>
+    <input type="submit"></input>
+    
+    </form>
+    
+    {{result}}
+    </html>
